@@ -47,7 +47,7 @@ button2.addEventListener('click',function(){
       var descValue = data['list']['0']['weather'][0]['description'];
 
       date1.innerHTML = "TODAY";
-      tmax1.innerHTML = `Max-Temp : ${Math.floor(tmaxValue)}° <span>C<span> `;
+      tmax1.innerHTML = `Max-Temp : ${Math.floor(tmaxValue)+1}° <span>C<span> `;
       tmin1.innerHTML = `Min-Temp : ${Math.floor(tminValue)}° <span>C<span> `;
       humid1.innerHTML= `HUMIDITY : ${humidValue} <span><span> `;
       desc1.innerHTML = descValue;
@@ -58,8 +58,8 @@ button2.addEventListener('click',function(){
       var humidValue = data['list']['8']['main']['humidity'];
       var descValue = data['list']['8']['weather'][0]['description'];
 
-      date2.innerHTML = "Day 2 :";
-      tmax2.innerHTML = `Max-Temp : ${Math.floor(tmaxValue)}° <span>C<span> `;
+      date2.innerHTML = "Tommorow :";
+      tmax2.innerHTML = `Max-Temp : ${Math.floor(tmaxValue)+1}° <span>C<span> `;
       tmin2.innerHTML = `Min-Temp : ${Math.floor(tminValue)}° <span>C<span> `;
       humid2.innerHTML= ` HUMIDITY : ${humidValue} <span><span> `;
       desc2.innerHTML = descValue;
@@ -70,8 +70,8 @@ button2.addEventListener('click',function(){
       var descValue = data['list']['16']['weather'][0]['description'];
 
       date3.innerHTML = "DAY 3 :";
-      tmax3.innerHTML = `Max-Temp : ${Math.floor(tmaxValue)}° <span>C<span> `;
-      tmin3.innerHTML = `Min-Temp : ${Math.floor(tminValue)}° <span>C<span> `;
+      tmax3.innerHTML = `Max-Temp : ${Math.floor(tmaxValue)+2}° <span>C<span> `;
+      tmin3.innerHTML = `Min-Temp : ${Math.floor(tminValue)-1}° <span>C<span> `;
       humid3.innerHTML= `HUMIDITY : ${humidValue} <span><span> `;
       desc3.innerHTML = descValue;
 
@@ -81,9 +81,9 @@ button2.addEventListener('click',function(){
       var humidValue = data['list']['24']['main']['humidity'];
       var descValue = data['list']['24']['weather'][0]['description'];
 
-      date4.innerHTML = "DAY 4 : ";
+      date4.innerHTML = " Yesterday : ";
       tmax4.innerHTML = `Max-Temp : ${Math.floor(tmaxValue)}° <span>C<span> `;
-      tmin4.innerHTML = `Min-Temp : ${Math.floor(tminValue)}° <span>C<span> `;
+      tmin4.innerHTML = `Min-Temp : ${Math.floor(tminValue)-1}° <span>C<span> `;
       humid4.innerHTML= `HUMIDITY : ${humidValue} <span><span> `;
       desc4.innerHTML = descValue;
     })
