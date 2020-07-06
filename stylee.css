@@ -1,127 +1,107 @@
-*{
-}
-
 body{
-    background: url(f1.jpg);
-}
+    background : url(w2.jpg);
 
-.headin{
-    margin-top: 5px;
-    background-color:  rgba(46, 252, 5, 0.582);
-    height: 120px;
-}
-.logo{
-    padding-top: 35px;  
-    text-align: center;
-    font-size: 50px;
-    color: rgb(6, 71, 192);
 }
 
 .container{
-    width: 300px;    
-    padding-top: 2px;
-    display: block;
-    margin: 100px;
-    margin-left: 800px;
+    margin-top: 100px;
+    margin-left: 120px;
     align-items: center;
-    border-radius: 10px;
-    padding-bottom : 50px;
-}
-
-.app-title{
-    width: 300px;
-    height: 50px;
-    border-radius: 10px 10px 0 0;
-}
-
-.app-title p{
-    text-align: center;
-    padding: 15px;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    font-size: 3em;
-    font-style: bold;
-    font-family: cursive;
-    color: hsl(32, 100%, 50%);
-}
-
-.notification{
-    background-color: #ece1e1;
-    display: none;
-}
-
-.notification p{
-    color: #721c24;
-    font-size: 1.2em;
-    margin: 0;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.weather-container{
-    margin-top: 50px;
-    width: 300px;
-    height: 360px;
-    background-color: #0c0c0ca9;
-}
-
-.weather-icon{
-    width: 300px;
-    height: 128px;
-}
-
-.weather-icon img{
-    display: block;
-    margin: 0 auto;
-}
-
-.temperature-value{
-    width: 300px;
-    height:60px;
-}
-
-.temperature-value p{
-    padding-top: 15px;
-    margin: 0;
-    color: #f57208;
-    font-size: 3em;
-    text-align: center;
-    cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-.temperature-value span{
-    padding-top: 10px;
-    color: #f57208;
-    font-size: 0.5em;
-}
-
-.temperature-description{
-    
-}
-
-.temperature-description p{
-    padding-top: 1px;
-    margin: 0;
-    color: #fd94e7;
-    text-align: center;
-    font-size: 50px;
-    font-variant-caps: all-petite-caps;
-
+    width: fit-content;
+    clip-path: circle(69.8%);
 }
 
 .location{
-    
+
+    color: #f19d01;
+    font-size: 5.4em;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.weather-icon{
+
+    align-items: center;
+}
+.temperature-description{
+
+    color: rgb(132, 245, 253);
+    font-size: 3.5em;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
 }
 
-.location p{
-    margin: 0;
-    padding-top: 18px;
-    color: #0bf8ec;
-    text-align: center;
-    font-size: 1.8em;
+.temperature-value{
+
+    color: rgba(248, 3, 3, 0.774);
+    font-size: 4.8em;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
-
-
-
+.presure{
+    margin-left: 600px;
+}
+.wind-speed{
+    margin-left: 600px;
+}
+.humedity{
+    margin-left: 600px;
+}
+.tmax{
+    margin-left: 600px;
+}
+.tmin{
+    margin-left: 600px;
+}
+.latitude p{
+    color: rgb(6, 78, 3);
+    font-size: 2.9em;
+    font-style: italic;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.longetude p{
+    color: rgba(25, 6, 77, 0.911);
+    font-size: 2.9em;
+    margin-left: 10px;
+    font-style: italic;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.humedity p{
+    color: rgba(189, 250, 247, 0.897);
+    font-size: 2.9em;
+    margin-left: 10px;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.presure p{
+    color: rgb(212, 238, 209);
+    font-size: 2.9em;
+    margin-left: 10px;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wind-speed p{
+    color: rgb(198, 134, 250);
+    font-size: 2.9em;
+    margin-left: 10px;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tmax p{
+    color: rgb(7, 245, 46);
+    font-size: 2.9em;
+    margin-left: 10px;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tmin p{
+    color: rgb(236, 240, 6);
+    font-size: 2.9em;
+    margin-left: 10px;
+    font-variant-caps: all-petite-caps;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
