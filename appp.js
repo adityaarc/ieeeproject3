@@ -3,7 +3,12 @@ const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
-
+const humidity = document.querySelector(".humid");
+const latitude = document.querySelector(".lat");
+const longitude = document.querySelector(".lon");
+const wspeed = document.querySelector(".speed");
+const press = document.querySelector(".pressure");
+const back = document.querySelector(".bck");
 const weather = {};
 
 weather.temperature = {
@@ -38,6 +43,7 @@ function getWeather(latitude, longitude){
     fetch(api)
         .then(function(response){
             let data = response.json();
+            console.log(data);
             return data;
         })
         .then(function(data){
@@ -46,6 +52,11 @@ function getWeather(latitude, longitude){
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
             weather.country = data.sys.country;
+            weather.humidity= data.main.humidity;
+            weather.latitude= data.coord.lat;
+            weather.longitude=data.coord.lon;
+            weather.wspeed=data.wind.speed;
+            weather.press= data.main.pressure;
         })
         .then(function(){
             displayWeather();
@@ -57,6 +68,11 @@ function displayWeather(){
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}`;
+    humidity.innerHTML= `${weather.humidity}`;
+    latitude.innerHTML= `${weather.latitude}`;
+    longitude.innerHTML= `${weather.longitude}`;
+    press.innerHTML= weather.press;
+    wspeed.innerHTML= `${weather.wspeed}`;
 }
 
 function celsiusToFahrenheit(temperature){
